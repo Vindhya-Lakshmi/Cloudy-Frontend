@@ -1,9 +1,22 @@
 import React from 'react'
-import "./App.css"
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
 
-function App()  {
+const App = () => {
   return (
-    <div className='App'>Hello</div>
+    <>
+      <div >
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+        </Routes>
+      </div>
+      <div className='App'>
+        <img src="src/assets/images.jpg" alt="" />
+        <button class="bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition duration-200">
+          Click Me
+        </button>
+      </div>
+    </>
   )
 }
 
