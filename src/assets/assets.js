@@ -1,4 +1,4 @@
-import cat from "./images.jpg"
+import logo from "./images.jpg"
 export const userDummyData = [
     
     {
@@ -11,7 +11,7 @@ export const userDummyData = [
 }
 ]
 const assets = {
-    cat,
+    logo,
     
 }
 export default assets;
